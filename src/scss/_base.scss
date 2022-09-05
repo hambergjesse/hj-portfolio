@@ -1,0 +1,57 @@
+:root {
+  // colours
+  --brand-main: #0e688b;
+  --brand-main-soft: #b1e7ff;
+  --brand-main-bright: #48c5f8;
+  --brand-main-light: #107eab;
+  --brand-main-active: #005379;
+  --brand-main-dark: #003146;
+  --brand-main-nearly-black: #000222;
+  --brand-main-white: #ffffff;
+  --link-blue: #0479a4;
+  --link-disabled: #767676;
+
+  // fonts
+  --base-font-size: 16px;
+  --base-font-size-mobile: 14px;
+  --main-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--brand-main-nearly-black);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h1 h2 h3 h4 h5 h6 li p {
+  color: var(--colorWhite);
+}
+
+img {
+  max-width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+}
