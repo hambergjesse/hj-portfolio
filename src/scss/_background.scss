@@ -1,0 +1,14 @@
+.background-image {
+  position: absolute;
+  object-fit: contain;
+  height: 100vh;
+  width: auto;
+  right: 0;
+  bottom: 0;
+  opacity: 15%;
+  text-align: right;
+
+  .background-image img {
+    height: 100%;
+  }
+}

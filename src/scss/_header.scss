@@ -24,6 +24,12 @@
     gap: 40px;
   }
 
+  .nav-contact-button {
+    background: var(--brand-main-light);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
   @media (max-width: 480px) {
     #logo-type {
       display: none;
