@@ -3,7 +3,7 @@ import Welcome from "./components/Welcome";
 import Header from "./components/Header";
 import "./scss/index.scss";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
@@ -11,6 +11,6 @@ function App() {
       <Background />
     </div>
   );
-}
+};
 
 export default App;

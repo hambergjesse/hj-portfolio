@@ -1,5 +1,6 @@
 import LogoMark from "../assets/logomark-white.png";
 import LogoType from "../assets/logotype-white.png";
+import Button from "./Button";
 
 const Header = () => {
   return (
@@ -15,32 +16,31 @@ const Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <li>Github</li>
+            <li>01. About</li>
           </a>
           <a
             href="https://www.behance.net/hambergjesse"
             target="_blank"
             rel="noreferrer"
           >
-            <li>Behance</li>
+            <li>02. Experience</li>
           </a>
           <a
             href="https://www.linkedin.com/in/hambergjesse/"
             target="_blank"
             rel="noreferrer"
           >
-            <li>Linkedin</li>
+            <li>03. Work</li>
           </a>
-        </ul>
-        <div className="nav-contact-button">
           <a
-            href="https://www.solo.to/hambergjesse"
+            href="https://solo.to/hambergjesse"
             target="_blank"
             rel="noreferrer"
           >
-            <li>Contact</li>
+            <li>04. Contact</li>
           </a>
-        </div>
+        </ul>
+        <Button />
       </div>
     </div>
   );
