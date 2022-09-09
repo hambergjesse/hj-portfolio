@@ -10,8 +10,9 @@
     margin-top: 175px;
     width: 325px;
     gap: 14px;
+
     h1 {
-      font-size: 36px;
+      font-size: 37px;
       color: var(--brand-main-bright);
       font-family: var(--main-font-family);
       span {
@@ -29,6 +30,106 @@
 
     .Button {
       margin-top: 14px;
+    }
+  }
+
+  /* Media Query for low resolution  Tablets, Ipads */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .main-welcome-text-wrapper {
+      width: 400px;
+
+      h1 {
+        font-size: 46px;
+        span {
+          font-size: 46px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-welcome-text-wrapper {
+      margin-top: 200px;
+      width: 600px;
+
+      h1 {
+        font-size: 70px;
+        span {
+          font-size: 70px;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        span {
+          font-size: 22px;
+        }
+      }
+
+      .nav-resume-button {
+        display: none;
+      }
+    }
+  }
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .main-welcome-text-wrapper {
+      margin-top: 200px;
+      width: 730px;
+
+      h1 {
+        font-size: 85px;
+        span {
+          font-size: 85px;
+        }
+      }
+
+      p {
+        font-size: 24px;
+        span {
+          font-size: 24px;
+        }
+      }
+
+      .nav-resume-button {
+        display: none;
+      }
+    }
+  }
+
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    .main-welcome-text-wrapper {
+      margin-right: 250px;
+      margin-top: 145px;
+      width: 800px;
+
+      h1 {
+        font-size: 72px;
+        span {
+          font-size: 72px;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        span {
+          font-size: 22px;
+        }
+      }
+
+      .nav-resume-button {
+        display: none;
+      }
     }
   }
 }

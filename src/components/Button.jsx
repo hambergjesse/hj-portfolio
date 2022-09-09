@@ -12,13 +12,15 @@ const Button = () => {
   };
 
   return (
-    <div style={resumeButton} className="nav-resume-button">
+    <div>
       <a
         href="https://drive.google.com/file/d/1LXZ_x1cwdsDkj7ttwADafMKHAp_9HSSR/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
-        <li style={listItem}>Resume</li>
+        <div style={resumeButton} className="nav-resume-button">
+          <li style={listItem}>Resume</li>
+        </div>
       </a>
     </div>
   );
