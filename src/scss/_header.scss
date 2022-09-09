@@ -11,11 +11,6 @@
     height: 28px;
   }
 
-  li {
-    font-size: 10px;
-    font-weight: 400;
-  }
-
   #logo-type {
     display: flex;
     justify-content: space-between;
@@ -27,6 +22,15 @@
   .main-header-nav {
     display: flex;
     gap: 40px;
+
+    li {
+      font-size: 10px;
+      font-weight: 400;
+    }
+
+    li:hover {
+      color: var(--brand-main-bright);
+    }
   }
 
   @media (max-width: 480px) {
