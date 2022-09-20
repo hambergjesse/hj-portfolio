@@ -40,7 +40,10 @@ const Header = () => {
             <li>04. Contact</li>
           </a>
         </ul>
-        <Button />
+        <Button
+          text="Resume"
+          link="https://drive.google.com/file/d/1LXZ_x1cwdsDkj7ttwADafMKHAp_9HSSR/view?usp=sharing"
+        />
       </div>
     </div>
   );

@@ -1,134 +1,136 @@
-.main-welcome-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 235px;
-  height: 100%;
-  width: 100%;
-
-  .main-welcome-text-wrapper {
+.app-wrapper {
+  .main-welcome-wrapper {
     display: flex;
     flex-direction: column;
-    transition: ease-in-out 1s;
-    width: 325px;
-    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 235px;
+    height: 100%;
+    width: 100%;
 
-    h1 {
-      font-size: 37px;
-      color: var(--brand-main-bright);
-      font-family: var(--main-font-family);
-      span {
-        color: var(--brand-main-white);
-      }
-    }
-
-    p {
-      font-weight: 400;
-      color: var(--link-disabled);
-      span {
-        color: var(--brand-main-white);
-      }
-    }
-
-    .Button {
-      margin-top: 14px;
-    }
-  }
-
-  /* Media Query for low resolution  Tablets, Ipads */
-  @media (min-width: 481px) and (max-width: 767px) {
     .main-welcome-text-wrapper {
-      width: 400px;
+      display: flex;
+      flex-direction: column;
+      transition: ease-in-out 1s;
+      width: 325px;
+      gap: 14px;
 
       h1 {
-        font-size: 46px;
+        font-size: 37px;
+        color: var(--brand-main-bright);
+        font-family: var(--main-font-family);
         span {
+          color: var(--brand-main-white);
+        }
+      }
+
+      p {
+        font-weight: 400;
+        color: var(--link-disabled);
+        span {
+          color: var(--brand-main-white);
+        }
+      }
+
+      .Button {
+        margin-top: 14px;
+      }
+    }
+
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      .main-welcome-text-wrapper {
+        width: 400px;
+
+        h1 {
           font-size: 46px;
+          span {
+            font-size: 46px;
+          }
         }
-      }
 
-      p {
-        font-size: 18px;
-        span {
+        p {
           font-size: 18px;
+          span {
+            font-size: 18px;
+          }
         }
       }
     }
-  }
 
-  /* Media Query for Tablets Ipads portrait mode */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .main-welcome-text-wrapper {
-      width: 600px;
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .main-welcome-text-wrapper {
+        width: 600px;
 
-      h1 {
-        font-size: 70px;
-        span {
+        h1 {
           font-size: 70px;
+          span {
+            font-size: 70px;
+          }
         }
-      }
 
-      p {
-        font-size: 22px;
-        span {
+        p {
           font-size: 22px;
+          span {
+            font-size: 22px;
+          }
         }
-      }
 
-      .nav-resume-button {
-        display: none;
+        .nav-resume-button {
+          display: none;
+        }
       }
     }
-  }
 
-  /* Media Query for Laptops and Desktops */
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .main-welcome-text-wrapper {
-      width: 730px;
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .main-welcome-text-wrapper {
+        width: 730px;
 
-      h1 {
-        font-size: 85px;
-        span {
+        h1 {
           font-size: 85px;
+          span {
+            font-size: 85px;
+          }
         }
-      }
 
-      p {
-        font-size: 24px;
-        span {
+        p {
           font-size: 24px;
+          span {
+            font-size: 24px;
+          }
         }
-      }
 
-      .nav-resume-button {
-        display: none;
+        .nav-resume-button {
+          display: none;
+        }
       }
     }
-  }
 
-  /* Media Query for Large screens */
-  @media (min-width: 1281px) {
-    .main-welcome-text-wrapper {
-      width: 800px;
-      margin-right: 400px;
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+      .main-welcome-text-wrapper {
+        width: 800px;
+        margin-right: 400px;
 
-      h1 {
-        font-size: 72px;
-        span {
+        h1 {
           font-size: 72px;
+          span {
+            font-size: 72px;
+          }
         }
-      }
 
-      p {
-        font-size: 22px;
-        span {
+        p {
           font-size: 22px;
+          span {
+            font-size: 22px;
+          }
         }
-      }
 
-      .nav-resume-button {
-        display: none;
+        .nav-resume-button {
+          display: none;
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-const Button = () => {
+const Button = (props) => {
   const resumeButton = {
     border: "1px solid var(--brand-main-bright)",
     borderRadius: "5px",
@@ -13,13 +13,9 @@ const Button = () => {
 
   return (
     <div>
-      <a
-        href="https://drive.google.com/file/d/1LXZ_x1cwdsDkj7ttwADafMKHAp_9HSSR/view?usp=sharing"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={props.link} target="_blank" rel="noreferrer">
         <div style={resumeButton} className="nav-resume-button">
-          <li style={listItem}>Resume</li>
+          <li style={listItem}>{props.text}</li>
         </div>
       </a>
     </div>
