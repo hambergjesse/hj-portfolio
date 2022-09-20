@@ -1,9 +1,9 @@
 import Button from "./Button";
 
-const Welcome = () => {
+const Content = () => {
   return (
-    <div className="main-welcome-wrapper">
-      <div className="main-welcome-text-wrapper">
+    <div className="main__content--wrapper">
+      <div className="main__welcome--text--wrapper">
         <h1>
           <span>Hi, I'm Jesse,</span> <br />
           and I build things.
@@ -22,4 +22,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Content;

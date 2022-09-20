@@ -14,7 +14,7 @@ const Button = (props) => {
   return (
     <div>
       <a href={props.link} target="_blank" rel="noreferrer">
-        <div style={resumeButton} className="nav-resume-button">
+        <div style={resumeButton} className="nav--resume--button">
           <li style={listItem}>{props.text}</li>
         </div>
       </a>

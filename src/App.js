@@ -1,13 +1,13 @@
 import Background from "./components/Background";
-import Welcome from "./components/Welcome";
+import Content from "./components/Content";
 import Header from "./components/Header";
 import "./scss/index.scss";
 
 const App = () => {
   return (
-    <div className="app-wrapper">
+    <div className="app__wrapper">
       <Header />
-      <Welcome />
+      <Content />
       <Background />
     </div>
   );
