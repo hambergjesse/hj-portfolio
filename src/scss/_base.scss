@@ -61,11 +61,10 @@ img {
   max-width: 100%;
 }
 
-.App {
+.app-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  align-items: center;
   width: 100vw;
+  height: 100%;
 }

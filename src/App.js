@@ -5,7 +5,7 @@ import "./scss/index.scss";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-wrapper">
       <Header />
       <Welcome />
       <Background />
