@@ -3,13 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 235px;
+  height: 100%;
   width: 100%;
 
   .main-welcome-text-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 200px;
     transition: ease-in-out 1s;
     width: 325px;
     gap: 14px;
