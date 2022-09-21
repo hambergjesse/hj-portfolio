@@ -12,9 +12,45 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Jesse Hamberg - Portfolio</title>
+
+    <style>
+      .loading {
+        -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+        animation: sk-scaleout 1s infinite ease-in-out;
+        background-color: var(--brand-main-nearly-black);
+        border-radius: 100%;
+        height: 6em;
+        width: 6em;
+      }
+
+      .container {
+        align-items: center;
+        background-color: var(--brand-main-nearly-black);
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100vw;
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          opacity: 0.5;
+          transform: scale(1);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="spinner" class="container">
+      <!-- <div class="loading"></div> -->
+      <img src="../src/assets/spinner.gif" />
+    </div>
     <div id="root"></div>
   </body>
 </html>
