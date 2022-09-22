@@ -4,11 +4,11 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <div className="main-header-wrapper">
-      <div id="logo-mark">
+    <div className="main__header--wrapper">
+      <div id="main__header--logo-mark">
         <img src={LogoMark} alt="HJ Logo Mark" />
       </div>
-      <div id="logo-type">
+      <div id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
         <ul className="main-header-nav">
           <a
