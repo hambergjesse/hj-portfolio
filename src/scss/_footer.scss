@@ -37,5 +37,13 @@
         color: var(--brand-main-bright);
       }
     }
+
+    /* Media Query for Large screens */
+    @media (max-width: 1280px) {
+      .main__footer--nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
   }
 }
