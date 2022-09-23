@@ -1,5 +1,6 @@
 import LogoMark from "../assets/logomark-white.png";
 import LogoType from "../assets/logotype-white.png";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
@@ -11,34 +12,18 @@ const Header = () => {
       <div id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
         <ul className="main-header-nav">
-          <a
-            href="https://www.github.com/hambergjesse"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link to="/">
             <li>01. About</li>
-          </a>
-          <a
-            href="https://www.behance.net/hambergjesse"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </Link>
+          <Link to="/experience">
             <li>02. Experience</li>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/hambergjesse/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </Link>
+          <Link to="/work">
             <li>03. Work</li>
-          </a>
-          <a
-            href="https://solo.to/hambergjesse"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </Link>
+          <Link to="/contact">
             <li>04. Contact</li>
-          </a>
+          </Link>
         </ul>
         <Button
           text="Resume"

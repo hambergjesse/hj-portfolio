@@ -1,30 +1,24 @@
-import Carousel from "nuka-carousel";
+import { Routes, Route } from "react-router-dom";
 import Background from "./components/Background";
-import About from "./components/About";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
 import "./scss/index.scss";
 
 const App = () => {
-  const carouselFrame = {
-    width: "100%",
-    height: "100%",
-    padding: "0",
-  };
-
   return (
     <div className="app__wrapper">
       <Header />
-      <Carousel
-        withoutControls="true"
-        wrapAround="true"
-        style={carouselFrame}
-        scrollMode="remainder"
-        slidesToShow="1"
-        adaptiveHeight="true"
-        speed="1250"
-      >
-        <About />
-      </Carousel>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
       <Background />
     </div>
   );
