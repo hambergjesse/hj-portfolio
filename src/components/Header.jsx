@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
-        <ul className="main-header-nav">
+        <ul className="main__header--nav">
           <Link to="/">
             <li>01. About</li>
           </Link>
