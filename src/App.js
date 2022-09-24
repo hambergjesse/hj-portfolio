@@ -2,10 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import Background from "./components/Background";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Work from "./pages/Work";
+import Contact from "./pages/Contact";
 import "./scss/index.scss";
 
 const App = () => {
