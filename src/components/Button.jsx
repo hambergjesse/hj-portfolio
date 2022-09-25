@@ -11,10 +11,23 @@ const Button = (props) => {
     fontWeight: "400",
   };
 
+  // on hover
+  const MouseOver = (event) => {
+    event.target.style.color = "var(--brand-main-bright)";
+  };
+  const MouseOut = (event) => {
+    event.target.style.color = "";
+  };
+
   return (
     <div>
       <a href={props.link} target="_blank" rel="noreferrer">
-        <div style={resumeButton} className="nav--resume--button">
+        <div
+          onMouseOver={MouseOver}
+          onMouseOut={MouseOut}
+          style={resumeButton}
+          className="nav--resume--button"
+        >
           <li style={listItem}>{props.text}</li>
         </div>
       </a>

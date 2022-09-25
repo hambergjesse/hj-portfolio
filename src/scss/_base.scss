@@ -20,6 +20,9 @@
 * {
   margin: 0px;
   padding: 0px;
+  // disable default cursor
+  cursor: none;
+  /////////////////////////
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
@@ -29,6 +32,18 @@
   -webkit-font-smoothing: antialiased !important;
 }
 
+// page fadein animation
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 html {
   body {
     overflow-x: hidden;
@@ -36,6 +51,10 @@ html {
     width: 100vw;
     height: 100vh;
     background: var(--brand-main-nearly-black);
+    // page fadein animation
+    animation: fadeInAnimation ease 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
     h1,
     h2,
@@ -69,4 +88,17 @@ html {
   height: 100%;
   // temp animation for res change
   transition: ease-in-out 0.5s;
+
+  .cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 16px;
+    //border: 2px solid var(--link-disabled);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    border: 2px solid var(--brand-main-white);
+  }
 }
