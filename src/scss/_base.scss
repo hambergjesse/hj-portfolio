@@ -20,9 +20,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  // disable default cursor
-  cursor: none;
-  /////////////////////////
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
@@ -88,17 +85,4 @@ html {
   height: 100%;
   // temp animation for res change
   transition: ease-in-out 0.5s;
-
-  .cursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 16px;
-    //border: 2px solid var(--link-disabled);
-    mix-blend-mode: difference;
-    pointer-events: none;
-    background: var(--brand-main-white);
-  }
 }

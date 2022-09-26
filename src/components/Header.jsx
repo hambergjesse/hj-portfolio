@@ -1,9 +1,16 @@
 import LogoMark from "../assets/logomark-white.png";
 import LogoType from "../assets/logotype-white.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
+  let activeStyle = {
+    textDecoration: "underline",
+    color: "var(--brand-main-bright)",
+  };
+
+  let activeClassName = "underline";
+
   return (
     <div className="main__header--wrapper">
       <div id="main__header--logo-mark">
@@ -12,18 +19,36 @@ const Header = () => {
       <div id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
         <ul className="main__header--nav">
-          <Link to="/">
+          <NavLink
+            to="/"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             <li>01. About</li>
-          </Link>
-          <Link to="/experience">
+          </NavLink>
+          <NavLink
+            to="/experience"
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+          >
             <li>02. Experience</li>
-          </Link>
-          <Link to="/work">
+          </NavLink>
+          <NavLink
+            to="/work"
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+          >
             <li>03. Work</li>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }
+          >
             <li>04. Contact</li>
-          </Link>
+          </NavLink>
         </ul>
         <Button
           text="Resume"
