@@ -1,0 +1,160 @@
+.app__wrapper {
+  .main__contact--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 200px;
+
+    .main__contact--text--wrapper {
+      display: flex;
+      flex-direction: column;
+      transition: ease-in-out 1s;
+      margin-bottom: 175px;
+      border-bottom: 1px solid var(--link-disabled);
+      padding-bottom: 25px;
+      width: 325px;
+      gap: 14px;
+
+      h1 {
+        font-size: 37px;
+        color: var(--brand-main-bright);
+        font-family: var(--main-font-family);
+        span {
+          color: var(--brand-main-white);
+        }
+      }
+
+      p {
+        font-weight: 400;
+        color: var(--link-disabled);
+        span {
+          color: var(--brand-main-white);
+        }
+      }
+    }
+
+    .main__contact--form--wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 175px;
+      gap: 25px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input {
+        width: 400px;
+        height: 30px;
+        border-radius: 0px 15px 15px 15px;
+        border: 1px solid var(--brand-main-bright);
+        background-color: transparent;
+      }
+    }
+
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      .main__contact--text--wrapper {
+        width: 400px;
+
+        h1 {
+          font-size: 46px;
+          span {
+            font-size: 46px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 18px;
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .main__contact--text--wrapper {
+        width: 600px;
+
+        h1 {
+          font-size: 70px;
+          span {
+            font-size: 70px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 22px;
+          span {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .main__contact--text--wrapper {
+        width: 730px;
+
+        h1 {
+          font-size: 85px;
+          span {
+            font-size: 85px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 24px;
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+      .main__contact--text--wrapper {
+        width: 625px;
+
+        h1 {
+          font-size: 72px;
+          span {
+            font-size: 72px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 22px;
+          span {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

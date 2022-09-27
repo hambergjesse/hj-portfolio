@@ -1,5 +1,5 @@
 .app__wrapper {
-  .main__content--wrapper {
+  .main__about--wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +7,7 @@
     height: 100vh;
     width: 100%;
 
-    .main__welcome--text--wrapper {
+    .main__about--text--wrapper {
       display: flex;
       flex-direction: column;
       transition: ease-in-out 1s;
@@ -40,7 +40,7 @@
         color: var(--brand-main-bright);
       }
 
-      .main__welcome--text--wrapper-list-container {
+      .main__about--text--wrapper-list-container {
         display: flex;
         margin-top: 7px;
         gap: 50px;
@@ -63,7 +63,7 @@
 
     /* Media Query for low resolution  Tablets, Ipads */
     @media (min-width: 481px) and (max-width: 767px) {
-      .main__welcome--text--wrapper {
+      .main__about--text--wrapper {
         width: 400px;
 
         h1 {
@@ -88,7 +88,7 @@
 
     /* Media Query for Tablets Ipads portrait mode */
     @media (min-width: 768px) and (max-width: 1024px) {
-      .main__welcome--text--wrapper {
+      .main__about--text--wrapper {
         width: 600px;
 
         h1 {
@@ -117,7 +117,7 @@
 
     /* Media Query for Laptops and Desktops */
     @media (min-width: 1025px) and (max-width: 1280px) {
-      .main__welcome--text--wrapper {
+      .main__about--text--wrapper {
         width: 730px;
 
         h1 {
@@ -146,7 +146,7 @@
 
     /* Media Query for Large screens */
     @media (min-width: 1281px) {
-      .main__welcome--text--wrapper {
+      .main__about--text--wrapper {
         width: 800px;
         margin-right: 500px;
 

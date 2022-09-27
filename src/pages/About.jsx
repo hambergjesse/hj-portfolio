@@ -3,8 +3,8 @@ import Button from "../components/Button";
 const Content = () => {
   return (
     <div>
-      <div className="main__content--wrapper">
-        <div className="main__welcome--text--wrapper">
+      <div className="main__about--wrapper">
+        <div className="main__about--text--wrapper">
           <h1>
             <span>Hi, I'm Jesse,</span> <br />
             and I build things.
@@ -15,13 +15,13 @@ const Content = () => {
             I'm focused on building accessible, human-centered products.
           </p>
           <h3>Here's what I've been working with recently:</h3>
-          <div className="main__welcome--text--wrapper-list-container">
-            <ul className="main__welcome--text--wrapper-list-1">
+          <div className="main__about--text--wrapper-list-container">
+            <ul className="main__about--text--wrapper-list-1">
               <li>&#8658; HTML</li>
               <li>&#8658; CSS & SCSS</li>
               <li>&#8658; JavaScript (ES6+)</li>
             </ul>
-            <ul className="main__welcome--text--wrapper-list-2">
+            <ul className="main__about--text--wrapper-list-2">
               <li>&#8658; React.js</li>
               <li>&#8658; Node.js</li>
               <li>&#8658; Express.js</li>
