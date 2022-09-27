@@ -1,5 +1,4 @@
 import Button from "../components/Button";
-import Socials from "../components/Socials";
 
 const Content = () => {
   return (

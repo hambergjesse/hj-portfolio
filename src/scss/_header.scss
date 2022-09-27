@@ -23,12 +23,12 @@
     display: flex;
     gap: 40px;
 
-    li {
+    a {
       font-size: 10px;
       font-weight: 400;
     }
 
-    li:hover {
+    a:hover {
       color: var(--brand-main-bright);
     }
   }

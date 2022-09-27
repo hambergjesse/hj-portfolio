@@ -16,9 +16,10 @@ const App = () => {
     <div className="app__wrapper">
       <Header />
       <TransitionGroup>
-        <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
+        <CSSTransition key={location.path} classNames="fade" timeout={300}>
           <Routes location={location}>
-            <Route path="/" element={<About />} />
+            <Route exact="true" path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />

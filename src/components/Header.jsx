@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
-  let activeStyle = {
-    textDecoration: "underline",
-    color: "var(--brand-main-bright)",
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      color: isActive ? "var(--brand-main-bright" : "var(--brand-main-white",
+      textDecoration: isActive ? "underline" : "none",
+    };
   };
-
-  let activeClassName = "underline";
 
   return (
     <div className="main__header--wrapper">
@@ -18,38 +18,20 @@ const Header = () => {
       </div>
       <div id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
-        <ul className="main__header--nav">
-          <NavLink
-            to="/"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            <li>01. About</li>
+        <nav className="main__header--nav">
+          <NavLink style={navLinkStyles} exact to="/about">
+            01. About
           </NavLink>
-          <NavLink
-            to="/experience"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
-          >
-            <li>02. Experience</li>
+          <NavLink style={navLinkStyles} to="/experience">
+            02. Experience
           </NavLink>
-          <NavLink
-            to="/work"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
-          >
-            <li>03. Work</li>
+          <NavLink style={navLinkStyles} to="/work">
+            03. Work
           </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? activeClassName : undefined
-            }
-          >
-            <li>04. Contact</li>
+          <NavLink style={navLinkStyles} to="/contact">
+            04. Contact
           </NavLink>
-        </ul>
+        </nav>
         <Button
           text="Resume"
           link="https://drive.google.com/file/d/1LXZ_x1cwdsDkj7ttwADafMKHAp_9HSSR/view?usp=sharing"
