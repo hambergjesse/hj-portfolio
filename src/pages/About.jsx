@@ -31,8 +31,8 @@ const About = () => {
         <h3>Here's what I've been working with recently:</h3>
         <div className="main__about--text--wrapper-list-container">
           <ul className="main__about--text--wrapper-list-1">
-            <li>&#8658; HTML</li>
-            <li>&#8658; CSS & SCSS</li>
+            <li>&#8658; HTML5</li>
+            <li>&#8658; CSS3 & SCSS</li>
             <li>&#8658; JavaScript (ES6+)</li>
           </ul>
           <ul className="main__about--text--wrapper-list-2">

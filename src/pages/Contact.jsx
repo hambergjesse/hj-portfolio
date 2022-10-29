@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -25,20 +26,7 @@ const Contact = () => {
           application you need help building, <span>I'm all ears!</span>
         </p>
       </div>
-      <div className="main__contact--form--wrapper">
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="text" name="email" />
-        </div>{" "}
-        <div>
-          <label htmlFor="message">Message:</label>
-          <input type="text" name="message" />
-        </div>
-      </div>
+      <ContactForm />
     </motion.div>
   );
 };

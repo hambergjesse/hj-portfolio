@@ -51,9 +51,32 @@
       input {
         width: 400px;
         height: 30px;
+        padding: 10px;
+        color: var(--brand-main-white);
         border-radius: 0px 15px 15px 15px;
         border: 1px solid var(--brand-main-bright);
-        background-color: transparent;
+        background-color: var(--brand-main-nearly-black);
+      }
+
+      textarea {
+        width: 400px;
+        height: 200px;
+        color: var(--brand-main-white);
+        padding: 10px;
+        border-radius: 0px 15px 15px 15px;
+        border: 1px solid var(--brand-main-bright);
+        background-color: var(--brand-main-nearly-black);
+      }
+
+      #submit-button {
+        width: 400px;
+        height: 35px;
+        cursor: pointer;
+        padding: 0px;
+        border-radius: 15px;
+        color: var(--brand-main-white);
+        border: 1px solid var(--link-disabled);
+        background-color: var(--brand-main-nearly-black);
       }
     }
 
