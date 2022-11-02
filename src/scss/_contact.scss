@@ -2,16 +2,18 @@
   .main__contact--wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    text-align: center;
+    margin: 12.5px 0px 25px 0px;
+    height: 75vh;
     width: 100%;
-    gap: 200px;
+    gap: 50px;
 
     .main__contact--text--wrapper {
       display: flex;
       flex-direction: column;
       transition: ease-in-out 1s;
-      margin-bottom: 175px;
       border-bottom: 1px solid var(--link-disabled);
       padding-bottom: 25px;
       width: 325px;
@@ -32,51 +34,6 @@
         span {
           color: var(--brand-main-white);
         }
-      }
-    }
-
-    .main__contact--form--wrapper {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-bottom: 175px;
-      gap: 25px;
-
-      div {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      input {
-        width: 400px;
-        height: 30px;
-        padding: 10px;
-        color: var(--brand-main-white);
-        border-radius: 0px 15px 15px 15px;
-        border: 1px solid var(--brand-main-bright);
-        background-color: var(--brand-main-nearly-black);
-      }
-
-      textarea {
-        width: 400px;
-        height: 200px;
-        color: var(--brand-main-white);
-        padding: 10px;
-        border-radius: 0px 15px 15px 15px;
-        border: 1px solid var(--brand-main-bright);
-        background-color: var(--brand-main-nearly-black);
-      }
-
-      #submit-button {
-        width: 400px;
-        height: 35px;
-        cursor: pointer;
-        padding: 0px;
-        border-radius: 15px;
-        color: var(--brand-main-white);
-        border: 1px solid var(--link-disabled);
-        background-color: var(--brand-main-nearly-black);
       }
     }
 
@@ -108,12 +65,37 @@
     /* Media Query for Tablets Ipads portrait mode */
     @media (min-width: 768px) and (max-width: 1024px) {
       .main__contact--text--wrapper {
-        width: 600px;
+        width: 475px;
 
         h1 {
-          font-size: 70px;
+          font-size: 55px;
           span {
-            font-size: 70px;
+            font-size: 55px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 16px;
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .main__contact--text--wrapper {
+        width: 525px;
+
+        h1 {
+          font-size: 60px;
+          span {
+            font-size: 60px;
           }
         }
 
@@ -130,15 +112,16 @@
       }
     }
 
-    /* Media Query for Laptops and Desktops */
-    @media (min-width: 1025px) and (max-width: 1280px) {
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
       .main__contact--text--wrapper {
-        width: 730px;
+        text-align: left;
+        width: 565px;
 
         h1 {
-          font-size: 85px;
+          font-size: 70px;
           span {
-            font-size: 85px;
+            font-size: 70px;
           }
         }
 
@@ -154,30 +137,13 @@
         }
       }
     }
+  }
 
-    /* Media Query for Large screens */
-    @media (min-width: 1281px) {
-      .main__contact--text--wrapper {
-        width: 625px;
-
-        h1 {
-          font-size: 72px;
-          span {
-            font-size: 72px;
-          }
-        }
-
-        h3 {
-          font-size: 18px;
-        }
-
-        p {
-          font-size: 22px;
-          span {
-            font-size: 22px;
-          }
-        }
-      }
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    .main__contact--wrapper {
+      flex-direction: row;
+      gap: 150px;
     }
   }
 }

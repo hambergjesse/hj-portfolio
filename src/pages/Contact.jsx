@@ -26,7 +26,9 @@ const Contact = () => {
           application you need help building, <span>I'm all ears!</span>
         </p>
       </div>
-      <ContactForm />
+      <div className="main__contact--form--wrapper">
+        <ContactForm />
+      </div>
     </motion.div>
   );
 };
