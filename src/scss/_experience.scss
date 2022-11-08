@@ -50,5 +50,64 @@
         }
       }
     }
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      .main__experience--container {
+        flex-direction: column;
+        width: 400px;
+
+        h1 {
+          font-size: 22px;
+        }
+        .main__experience--sect {
+          h2 {
+            font-size: 16px;
+          }
+
+          span,
+          a {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .main__experience--container {
+        margin: 35px 0px 35px 0;
+        width: 600px;
+
+        h1 {
+          font-size: 24px;
+        }
+        .main__experience--sect {
+          h2 {
+            font-size: 18px;
+          }
+
+          span,
+          a {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    }
+
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+    }
   }
 }
