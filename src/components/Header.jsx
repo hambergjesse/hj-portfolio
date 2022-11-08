@@ -19,7 +19,7 @@ const Header = () => {
       <section id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
         <nav className="main__header--nav">
-          <NavLink style={navLinkStyles} exact to="/about">
+          <NavLink style={navLinkStyles} to="/about">
             01. About
           </NavLink>
           <NavLink style={navLinkStyles} to="/experience">
