@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import ExperienceItems from "../components/ExperienceItems";
+
 const Experience = () => {
   return (
     <motion.div
@@ -15,27 +17,10 @@ const Experience = () => {
       }}
     >
       <main className="main__experience--wrapper">
-        <h1>My past and current experience.</h1>
-        <section className="main__experience--sect">
-          <h2>
-            Full Stack Developer <span>@ Virittämö Helsinki</span>
-          </h2>
-        </section>
-        <section className="main__experience--sect">
-          <h2>
-            Web Development Intern <span>@ Digitalents Academy</span>
-          </h2>
-        </section>
-        <section className="main__experience--sect">
-          <h2>
-            Graphic Designer <span>@ ESE Entertainment</span>
-          </h2>
-        </section>
-        <section className="main__experience--sect">
-          <h2>
-            Junior Designer <span>@ K1CK Esports</span>
-          </h2>
-        </section>
+        <div className="main__experience--container">
+          <h1>My past experience.</h1>
+          <ExperienceItems />
+        </div>
       </main>
     </motion.div>
   );

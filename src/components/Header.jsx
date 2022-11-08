@@ -12,11 +12,11 @@ const Header = () => {
   };
 
   return (
-    <div className="main__header--wrapper">
-      <div id="main__header--logo-mark">
+    <main className="main__header--wrapper">
+      <section id="main__header--logo-mark">
         <img src={LogoMark} alt="HJ Logo Mark" />
-      </div>
-      <div id="main__header--logo-type">
+      </section>
+      <section id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
         <nav className="main__header--nav">
           <NavLink style={navLinkStyles} exact to="/about">
@@ -36,8 +36,8 @@ const Header = () => {
           text="Resume"
           link="https://drive.google.com/file/d/19ss-86Egf04LYXhlcPlmyhq4W4RfLlwz/view?usp=share_link"
         />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

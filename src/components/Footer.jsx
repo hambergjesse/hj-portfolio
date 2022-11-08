@@ -4,9 +4,9 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <div className="main__footer--wrapper">
+    <main className="main__footer--wrapper">
       <img src={LogoMark} alt="HJ Logo Mark" />
-      <div className="main__footer--container">
+      <section className="main__footer--container">
         <ul className="main__footer--nav">
           <Link to="/">
             <li>01. About</li>
@@ -21,12 +21,12 @@ const Footer = () => {
             <li>04. Contact</li>
           </Link>
         </ul>
-      </div>
-      <div className="main__footer--socials">
+      </section>
+      <section className="main__footer--socials">
         <Socials />
-      </div>
+      </section>
       <p>© 2022 Jesse Hamberg. All rights reserved.</p>
-    </div>
+    </main>
   );
 };
 
