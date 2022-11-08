@@ -48,7 +48,13 @@ const ExperienceItems = (props) => {
         : jobs.map((job, index) => (
             <div key={index} className="main__experience--sect">
               <h2>
-                {job.position} <span>@ {job.company}</span>
+                {job.position}{" "}
+                <span>
+                  @{" "}
+                  <a target="_blank" rel="noreferrer" href={job.link}>
+                    {job.company}
+                  </a>
+                </span>
               </h2>
               <p>{job.duration}</p>
               {job.description.map((desc, index) => (

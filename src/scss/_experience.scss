@@ -31,12 +31,22 @@
         a {
           font-size: 14px;
           color: var(--brand-main-bright);
+          transition: ease-in-out 0.15s;
+        }
+
+        a:hover {
+          color: var(--brand-main-white);
         }
 
         p {
           font-size: 12px;
           color: var(--link-disabled);
           margin-bottom: 12px;
+          transition: ease-in-out 0.15s;
+        }
+
+        p:hover {
+          color: var(--brand-main-white);
         }
       }
     }
