@@ -13,7 +13,31 @@ const Experience = () => {
         ease: "easeInOut",
         duration: 0.75,
       }}
-    ></motion.div>
+    >
+      <main className="main__experience--wrapper">
+        <h1>My past and current experience.</h1>
+        <section className="main__experience--sect">
+          <h2>
+            Full Stack Developer <span>@ Virittämö Helsinki</span>
+          </h2>
+        </section>
+        <section className="main__experience--sect">
+          <h2>
+            Web Development Intern <span>@ Digitalents Academy</span>
+          </h2>
+        </section>
+        <section className="main__experience--sect">
+          <h2>
+            Graphic Designer <span>@ ESE Entertainment</span>
+          </h2>
+        </section>
+        <section className="main__experience--sect">
+          <h2>
+            Junior Designer <span>@ K1CK Esports</span>
+          </h2>
+        </section>
+      </main>
+    </motion.div>
   );
 };
 

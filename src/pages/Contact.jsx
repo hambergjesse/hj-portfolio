@@ -14,21 +14,22 @@ const Contact = () => {
         ease: "easeInOut",
         duration: 0.75,
       }}
-      className="main__contact--wrapper"
     >
-      <div className="main__contact--text--wrapper">
-        <h1>
-          <span>Need some help</span> <br />
-          with something?
-        </h1>
-        <p>
-          Turn your writing brain on and tell me everything about the dream
-          application you need help building, <span>I'm all ears!</span>
-        </p>
-      </div>
-      <div className="main__contact--form--wrapper">
-        <ContactForm />
-      </div>
+      <main className="main__contact--wrapper">
+        <section className="main__contact--text--wrapper">
+          <h1>
+            <span>Need some help</span> <br />
+            with something?
+          </h1>
+          <p>
+            Turn your writing brain on and tell me everything about the dream
+            application you need help building, <span>I'm all ears!</span>
+          </p>
+        </section>
+        <section className="main__contact--form--wrapper">
+          <ContactForm />
+        </section>
+      </main>
     </motion.div>
   );
 };
