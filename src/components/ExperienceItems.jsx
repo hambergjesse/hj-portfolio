@@ -1,4 +1,4 @@
-const ExperienceItems = (props) => {
+const ExperienceItems = () => {
   const jobs = [
     {
       company: "Virittämö Helsinki",
