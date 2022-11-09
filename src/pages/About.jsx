@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.div
+      layout
       initial={{ opacity: 0, x: -360, ease: "easeInOut" }}
       animate={{ opacity: 1, x: 0, ease: "easeInOut" }}
       transition={{
@@ -14,7 +15,7 @@ const About = () => {
       exit={{
         opacity: 0,
         ease: "easeInOut",
-        duration: 0.75,
+        duration: 1.35,
       }}
     >
       <main className="main__about--wrapper">

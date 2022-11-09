@@ -4,8 +4,9 @@ import ContactForm from "../components/ContactForm";
 const Contact = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -360, ease: "easeInOut" }}
-      animate={{ opacity: 1, x: 0, ease: "easeInOut" }}
+      layout
+      initial={{ opacity: 0, ease: "easeInOut" }}
+      animate={{ opacity: 1, ease: "easeInOut" }}
       transition={{
         ease: "easeInOut",
         duration: 1.35,
@@ -13,7 +14,7 @@ const Contact = () => {
       exit={{
         opacity: 0,
         ease: "easeInOut",
-        duration: 0.75,
+        duration: 1.35,
       }}
     >
       <main className="main__contact--wrapper">
