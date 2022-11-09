@@ -4,14 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
 
     .main__about--text--wrapper {
       display: flex;
       flex-direction: column;
       transition: ease-in-out 1s;
-      margin-bottom: 175px;
       border-bottom: 1px solid var(--link-disabled);
       padding-bottom: 25px;
       width: 325px;
