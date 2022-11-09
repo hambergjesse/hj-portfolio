@@ -17,8 +17,8 @@ const Experience = () => {
       }}
     >
       <main className="main__experience--wrapper">
+        <div className="main__experience--imagecontainer"></div>
         <div className="main__experience--container">
-          <h1>My past experience.</h1>
           <ExperienceItems />
         </div>
       </main>
