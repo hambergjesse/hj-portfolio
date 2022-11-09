@@ -17,14 +17,24 @@ const WorkItems = () => {
         "https://github.com/hambergjesse/time-tracker/raw/main/repo-assets/readme-preview-image.jpg",
     },
     {
-      name: "testname2",
-      description: "desc2",
-      technologies: ["1", "2", "3"],
+      name: "futurice-app",
+      description:
+        "A mobile-first Github profile revamp project for Futurice Academy's application process.",
+      technologies: [
+        "HTML5",
+        "SCSS",
+        "JavaScript",
+        "ReactJS",
+        "GITHUB-REST-API",
+      ],
+      image: "https://i.imgur.com/q74VTR4.png",
     },
     {
-      name: "testname3",
-      description: "desc3",
-      technologies: ["1", "2", "3"],
+      name: "to be announced",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat unde eum consequuntur maiores officiis tenetur vitae nostrum quia inventore.",
+      technologies: ["BEEP", "BOOP", "BEEP"],
+      image: "https://i.imgur.com/GpprZni.jpg",
     },
   ];
 
