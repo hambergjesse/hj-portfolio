@@ -1,25 +1,48 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogoMark from "../assets/logomark-white.png";
 import Socials from "./Socials";
 
 const Footer = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      color: isActive ? "var(--brand-main-bright" : "var(--brand-main-white",
+      textDecoration: isActive ? "underline" : "none",
+    };
+  };
+
   return (
     <main className="main__footer--wrapper">
       <img src={LogoMark} alt="HJ Logo Mark" />
       <section className="main__footer--container">
         <ul className="main__footer--nav">
-          <Link to="/">
-            <li>01. About</li>
-          </Link>
-          <Link to="/experience">
-            <li>02. Experience</li>
-          </Link>
-          <Link to="/work">
-            <li>03. Work</li>
-          </Link>
-          <Link to="/contact">
-            <li>04. Contact</li>
-          </Link>
+          <NavLink
+            className="main__footer--navlink"
+            style={navLinkStyles}
+            to="/about"
+          >
+            01. About
+          </NavLink>
+          <NavLink
+            className="main__footer--navlink"
+            style={navLinkStyles}
+            to="/experience"
+          >
+            02. Experience
+          </NavLink>
+          <NavLink
+            className="main__footer--navlink"
+            style={navLinkStyles}
+            to="/work"
+          >
+            03. Work
+          </NavLink>
+          <NavLink
+            className="main__footer--navlink"
+            style={navLinkStyles}
+            to="/contact"
+          >
+            04. Contact
+          </NavLink>
         </ul>
       </section>
       <section className="main__footer--socials">

@@ -13,23 +13,26 @@
       gap: 16px;
 
       h1 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 20px;
       }
       .main__experience--sect {
         display: flex;
         flex-direction: column;
+        border: 1px solid var(--link-disabled);
+        border-radius: 15px;
+        padding: 16px;
         line-height: 20px;
         gap: 8px;
 
         h2 {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
         }
 
         span,
         a {
-          font-size: 14px;
+          font-size: 16px;
           color: var(--brand-main-bright);
           transition: ease-in-out 0.15s;
         }
@@ -39,7 +42,7 @@
         }
 
         p {
-          font-size: 12px;
+          font-size: 14px;
           color: var(--link-disabled);
           margin-bottom: 12px;
           transition: ease-in-out 0.15s;
@@ -60,6 +63,8 @@
           font-size: 22px;
         }
         .main__experience--sect {
+          padding: 20px;
+
           h2 {
             font-size: 16px;
           }
@@ -86,6 +91,8 @@
           font-size: 24px;
         }
         .main__experience--sect {
+          padding: 24px;
+
           h2 {
             font-size: 18px;
           }
@@ -96,7 +103,7 @@
           }
 
           p {
-            font-size: 15px;
+            font-size: 16px;
           }
         }
       }
@@ -104,10 +111,58 @@
 
     /* Media Query for Laptops and Desktops */
     @media (min-width: 1025px) and (max-width: 1280px) {
+      .main__experience--container {
+        margin: 35px 0px 35px 0;
+        width: 600px;
+
+        h1 {
+          font-size: 24px;
+        }
+        .main__experience--sect {
+          padding: 26px;
+
+          h2 {
+            font-size: 20px;
+          }
+
+          span,
+          a {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
     }
 
     /* Media Query for Large screens */
     @media (min-width: 1281px) {
+      .main__experience--container {
+        margin: 35px 0px 35px 0;
+        width: 600px;
+
+        h1 {
+          font-size: 24px;
+        }
+        .main__experience--sect {
+          padding: 26px;
+
+          h2 {
+            font-size: 18px;
+          }
+
+          span,
+          a {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }
