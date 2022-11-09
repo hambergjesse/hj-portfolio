@@ -10,12 +10,12 @@ const Experience = () => {
       animate={{ opacity: 1, ease: "easeInOut" }}
       transition={{
         ease: "easeInOut",
-        duration: 1.35,
+        duration: 1,
       }}
       exit={{
         opacity: 0,
         ease: "easeInOut",
-        duration: 1.35,
+        duration: 1,
       }}
     >
       <main className="main__experience--wrapper">
