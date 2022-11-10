@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 
     .main__about--text--wrapper {
@@ -147,7 +147,7 @@
     @media (min-width: 1281px) {
       .main__about--text--wrapper {
         width: 800px;
-        margin-right: 500px;
+        margin: 0px 600px 0px 200px;
 
         h1 {
           font-size: 72px;
@@ -171,6 +171,26 @@
           display: none;
         }
       }
+    }
+  }
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main__about--wrapper {
+      height: 80vh;
+    }
+  }
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .main__about--wrapper {
+      height: 83vh;
+    }
+  }
+
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    .main__about--wrapper {
+      height: 83vh;
     }
   }
 }
