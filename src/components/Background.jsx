@@ -1,4 +1,4 @@
-import BackgroundIMG from "../assets/background.png";
+import BackgroundIMG from "../assets/background.webp";
 
 const Background = () => {
   return (
