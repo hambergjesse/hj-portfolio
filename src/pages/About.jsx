@@ -43,6 +43,7 @@ const About = () => {
             </ul>
           </div>
           <Button
+            alt="link to Jesse Hamberg's resume."
             text="Resume"
             link="https://drive.google.com/file/d/19ss-86Egf04LYXhlcPlmyhq4W4RfLlwz/view?usp=share_link"
           />
