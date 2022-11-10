@@ -29,7 +29,7 @@ const About = () => {
             occasionally designing exceptional digital experiences. Currently,
             I'm focused on building accessible, human-centered products.
           </p>
-          <h3>Here's what I've been working with recently:</h3>
+          <h2>Here's what I've been working with recently:</h2>
           <div className="main__about--text--wrapper-list-container">
             <ul className="main__about--text--wrapper-list">
               <li>&#8658; HTML5</li>

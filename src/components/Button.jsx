@@ -28,7 +28,9 @@ const Button = (props) => {
           style={resumeButton}
           className="nav--resume--button"
         >
-          <li style={listItem}>{props.text}</li>
+          <ul>
+            <li style={listItem}>{props.text}</li>
+          </ul>
         </div>
       </a>
     </div>

@@ -1,5 +1,5 @@
-import LogoMark from "../assets/logomark-white.png";
-import LogoType from "../assets/logotype-white.png";
+import LogoMark from "../assets/logomark-white.webp";
+import LogoType from "../assets/logomark-white.webp";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 

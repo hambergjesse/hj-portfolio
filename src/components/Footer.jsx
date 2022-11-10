@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import LogoMark from "../assets/logomark-white.png";
+import LogoMark from "../assets/logomark-white.webp";
 import Socials from "./Socials";
 
 const Footer = () => {
@@ -16,6 +16,7 @@ const Footer = () => {
       <section className="main__footer--container">
         <ul className="main__footer--nav">
           <NavLink
+            alt="link to about page"
             className="main__footer--navlink"
             style={navLinkStyles}
             to="/about"
@@ -23,6 +24,7 @@ const Footer = () => {
             01. About
           </NavLink>
           <NavLink
+            alt="link to experience page"
             className="main__footer--navlink"
             style={navLinkStyles}
             to="/experience"
@@ -30,6 +32,7 @@ const Footer = () => {
             02. Experience
           </NavLink>
           <NavLink
+            alt="link to work page"
             className="main__footer--navlink"
             style={navLinkStyles}
             to="/work"
@@ -37,6 +40,7 @@ const Footer = () => {
             03. Work
           </NavLink>
           <NavLink
+            alt="link to contact page"
             className="main__footer--navlink"
             style={navLinkStyles}
             to="/contact"

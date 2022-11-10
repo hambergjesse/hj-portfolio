@@ -1,11 +1,13 @@
 import BackgroundIMG from "../assets/background.webp";
 
 const Background = () => {
+  const preLoadImage = (new Image().src = BackgroundIMG);
+
   return (
     <div className="background-wrapper">
       <img
         className="background-image"
-        src={BackgroundIMG}
+        src={preLoadImage}
         alt="Website Background"
       />
     </div>

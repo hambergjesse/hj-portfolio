@@ -1,4 +1,13 @@
+import timeTracker from "../assets/experience/time-tracker.webp";
+import futuriceApp from "../assets/experience/futurice-app.webp";
+import tempImage from "../assets/experience/temp-image.webp";
+
 const WorkItems = () => {
+  const preLoadImage = (url) => {
+    const result = (new Image().src = url);
+    return result;
+  };
+
   const projects = [
     {
       name: "time-tracker",
@@ -13,8 +22,7 @@ const WorkItems = () => {
         "ExpressJS",
         "MongoDB",
       ],
-      image:
-        "https://github.com/hambergjesse/time-tracker/raw/main/repo-assets/readme-preview-image.jpg",
+      image: preLoadImage(timeTracker),
     },
     {
       name: "futurice-app",
@@ -27,14 +35,14 @@ const WorkItems = () => {
         "ReactJS",
         "GITHUB-REST-API",
       ],
-      image: "https://i.imgur.com/q74VTR4.png",
+      image: preLoadImage(futuriceApp),
     },
     {
       name: "to be announced",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat unde eum consequuntur maiores officiis tenetur vitae nostrum quia inventore.",
       technologies: ["BEEP", "BOOP", "BEEP"],
-      image: "https://i.imgur.com/GpprZni.jpg",
+      image: preLoadImage(tempImage),
     },
   ];
 
