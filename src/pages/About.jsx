@@ -6,16 +6,16 @@ const About = () => {
   return (
     <motion.div
       layout
-      initial={{ opacity: 1, x: 0, ease: "easeInOut" }}
+      initial={{ opacity: 0, x: -360, ease: "easeInOut" }}
       animate={{ opacity: 1, x: 0, ease: "easeInOut" }}
       transition={{
         ease: "easeInOut",
-        duration: 0,
+        duration: 1,
       }}
       exit={{
         opacity: 0,
         ease: "easeInOut",
-        duration: 0,
+        duration: 1,
       }}
     >
       <main className="main__about--wrapper">
