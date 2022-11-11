@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import EmailValidator from "email-validator";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -35,7 +36,7 @@ const ContactForm = () => {
     });
 
   const sendWarning = () => {
-    toast.warn("Make sure you fill all fields.", {
+    toast.warn("Make sure all the fields are correct.", {
       position: "bottom-center",
       autoClose: 3000,
       hideProgressBar: false,
@@ -54,7 +55,11 @@ const ContactForm = () => {
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-    if (name.length > 0 && email.length > 0 && message.length > 0) {
+    if (
+      name.length > 0 &&
+      EmailValidator.validate(email) === true &&
+      message.length > 0
+    ) {
       emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
         (result) => {
           console.log(result.text);
@@ -69,7 +74,7 @@ const ContactForm = () => {
         }
       );
     } else {
-      console.log("fields cannot be empty.");
+      console.log("double check the fields.");
       sendWarning();
     }
   };
