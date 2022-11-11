@@ -11,32 +11,8 @@ const ContactForm = () => {
 
   const form = useRef();
 
-  const sendSuccess = () =>
-    toast.success("Email sent succesfully!", {
-      position: "bottom-center",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-
-  const sendError = () =>
-    toast.error("Could not send email!", {
-      position: "bottom-center",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-
-  const sendWarning = () => {
-    toast.warn("Make sure all the fields are correct.", {
+  const formSubmitResult = (input, text) => {
+    input(text, {
       position: "bottom-center",
       autoClose: 3000,
       hideProgressBar: false,
@@ -63,19 +39,19 @@ const ContactForm = () => {
       emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
         (result) => {
           console.log(result.text);
-          sendSuccess();
+          formSubmitResult(toast.success, "Email sent succesfully!");
           setName("");
           setEmail("");
           setMessage("");
         },
         (error) => {
           console.log(error.text);
-          sendError();
+          formSubmitResult(toast.error, "Could not send email!");
         }
       );
     } else {
       console.log("double check the fields.");
-      sendWarning();
+      formSubmitResult(toast.warn, "Make sure all the fields are correct.");
     }
   };
 
