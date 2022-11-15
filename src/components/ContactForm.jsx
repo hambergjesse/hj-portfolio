@@ -5,10 +5,10 @@ import "react-toastify/dist/ReactToastify.css";
 import EmailValidator from "email-validator";
 
 const ContactForm = () => {
-  const formRef = useRef();
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const msgRef = useRef();
+  const formRef = useRef(),
+    nameRef = useRef(),
+    emailRef = useRef(),
+    msgRef = useRef();
 
   const formSubmitResult = (input, text) => {
     input(text, {
