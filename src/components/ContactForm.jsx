@@ -1,15 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import EmailValidator from "email-validator";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const form = useRef();
+  const formRef = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const msgRef = useRef();
 
   const formSubmitResult = (input, text) => {
     input(text, {
@@ -31,18 +30,20 @@ const ContactForm = () => {
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const message = msgRef.current.value;
+
     if (
       name.length > 0 &&
       EmailValidator.validate(email) === true &&
       message.length > 0
     ) {
-      emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      emailjs.sendForm(serviceId, templateId, formRef.current, publicKey).then(
         (result) => {
           console.log(result.text);
           formSubmitResult(toast.success, "Email sent succesfully!");
-          setName("");
-          setEmail("");
-          setMessage("");
+          formRef.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -56,33 +57,19 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={formRef} onSubmit={sendEmail}>
       <div className="main__contact--form--wrapper">
         <div>
           <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="user_name"
-            onChange={(event) => setName(event.target.value)}
-            value={name}
-          />
+          <input type="text" name="user_name" ref={nameRef} />
         </div>
         <div>
           <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="user_email"
-            onChange={(event) => setEmail(event.target.value)}
-            value={email}
-          />
+          <input type="email" name="user_email" ref={emailRef} />
         </div>{" "}
         <div className="main__contact--form--message">
           <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            onChange={(event) => setMessage(event.target.value)}
-            value={message}
-          />
+          <textarea name="message" ref={msgRef} />
         </div>
         <input id="submit-button" type="submit" value="Send Message" />
         <ToastContainer />
