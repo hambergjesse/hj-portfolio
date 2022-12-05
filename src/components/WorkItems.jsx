@@ -32,7 +32,7 @@ const WorkItems = () => {
       image: preLoadImage(futuriceApp),
     },
     {
-      name: "random.logic",
+      name: "random-logic",
       description:
         "Random logic puzzle question generator for practical interview practice.",
       technologies: ["HTML", "SCSS", "JavaScript"],
