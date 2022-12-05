@@ -1,6 +1,6 @@
 import timeTracker from "../assets/experience/time-tracker.webp";
 import futuriceApp from "../assets/experience/futurice-app.webp";
-import tempImage from "../assets/experience/temp-image.webp";
+import randomLogic from "../assets/experience/random-logic.webp";
 
 const WorkItems = () => {
   const preLoadImage = (url) => {
@@ -28,21 +28,15 @@ const WorkItems = () => {
       name: "futurice-app",
       description:
         "A mobile-first Github profile revamp project for Futurice Academy's application process.",
-      technologies: [
-        "HTML5",
-        "SCSS",
-        "JavaScript",
-        "ReactJS",
-        "GITHUB-REST-API",
-      ],
+      technologies: ["HTML5", "SCSS", "JavaScript", "ReactJS"],
       image: preLoadImage(futuriceApp),
     },
     {
-      name: "to be announced",
+      name: "random.logic",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat unde eum consequuntur maiores officiis tenetur vitae nostrum quia inventore.",
-      technologies: ["BEEP", "BOOP", "BEEP"],
-      image: preLoadImage(tempImage),
+        "Random logic puzzle question generator for practical interview practice.",
+      technologies: ["HTML", "SCSS", "JavaScript"],
+      image: preLoadImage(randomLogic),
     },
   ];
 

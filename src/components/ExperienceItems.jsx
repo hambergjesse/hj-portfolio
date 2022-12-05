@@ -1,3 +1,8 @@
+import k1ckOne from "../assets/experience/work/k1ck-1.webp";
+import k1ckTwo from "../assets/experience/work/k1ck-2.webp";
+import eseOne from "../assets/experience/work/ese-1.webp";
+import eseTwo from "../assets/experience/work/ese-2.webp";
+
 const ExperienceItems = () => {
   const jobs = [
     {
@@ -6,6 +11,7 @@ const ExperienceItems = () => {
       duration: "Nov 2022 - Present",
       link: "https://virittamohelsinki.fi/",
       description: [],
+      images: [],
     },
     {
       company: "Digitalents Academy",
@@ -15,6 +21,7 @@ const ExperienceItems = () => {
       description: [
         "Used technologies such as React.js, JavaScript, SCSS/CSS3, HTML5, Node.js, Express.js, MongoDB, and Git to develop customer-focused and personal Front-End/Full-Stack projects while working within a Scrum team/Agile environment.",
       ],
+      images: [],
     },
     {
       company: "ESE Entertainment",
@@ -26,6 +33,7 @@ const ExperienceItems = () => {
         "Tasked with creating sponsorship/partnership/event pitch decks for numerous international companies within the gaming and esports scene through ESE.",
         "Visually lead and assisted the continuous effort to bridge the gap between some of the biggest companies in the world and the world of gaming, esports and content creation.",
       ],
+      images: [eseOne, eseTwo],
     },
     {
       company: "K1CK Esports",
@@ -38,6 +46,7 @@ const ExperienceItems = () => {
         "Produced print-ready design assets for clothing, advertisement boards, and office accessories.",
         "Built branding assets from concepts to fullfledged products for K1CKs many community projects.",
       ],
+      images: [k1ckOne, k1ckTwo],
     },
   ];
 
@@ -63,6 +72,22 @@ const ExperienceItems = () => {
                   {desc}
                 </p>
               ))}
+              {!job.images.length > 0 ? (
+                console.log("fuck")
+              ) : (
+                <div className="main__experience--sect-images">
+                  {job.images.map((image, index) => (
+                    <a
+                      href={image}
+                      key={index}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={image} alt="" />
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
     </>
