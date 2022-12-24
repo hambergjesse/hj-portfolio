@@ -5,7 +5,7 @@ const BurgerMenu = () => {
 
   const toggleScroll = () => {
     setScrollDisabled(!scrollDisabled);
-    document.body.style.overflow = scrollDisabled ? "auto" : "hidden";
+    document.body.style.overflowY = scrollDisabled ? "auto" : "hidden";
   };
 
   return (
