@@ -39,7 +39,7 @@ The site will be available at `http://localhost:3000`.
 
 ## Live Version
 
-The site is deployed at [https://hambergjesse.netlify.app/](https://hambergjesse.netlify.app/).
+The site is deployed at [https://www.hambergjesse.com/](https://www.hambergjesse.com/).
 
 ## Contact
 
