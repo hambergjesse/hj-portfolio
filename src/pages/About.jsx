@@ -37,9 +37,9 @@ const About = () => {
               <li>&#8658; JavaScript (ES6+)</li>
             </ul>
             <ul className="main__about--text--wrapper-list">
-              <li>&#8658; React.js</li>
               <li>&#8658; Node.js</li>
-              <li>&#8658; Express.js</li>
+              <li>&#8658; React.js</li>
+              <li>&#8658; TypeScript</li>
             </ul>
           </div>
           <Button

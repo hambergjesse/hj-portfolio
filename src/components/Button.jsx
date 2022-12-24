@@ -1,7 +1,7 @@
 const Button = (props) => {
   const resumeButton = {
     border: "1px solid var(--brand-main-bright)",
-    borderRadius: "5px",
+    borderRadius: "7.5px",
     padding: "8px 12px",
     width: "69.25px",
   };

@@ -1,6 +1,7 @@
 import LogoMark from "../assets/logomark-white.webp";
 import LogoType from "../assets/logotype-white.webp";
 import { NavLink } from "react-router-dom";
+import BurgerMenu from "./BurgerMenu";
 import Button from "./Button";
 
 const Header = () => {
@@ -15,6 +16,7 @@ const Header = () => {
     <main className="main__header--wrapper">
       <section id="main__header--logo-mark">
         <img src={LogoMark} alt="HJ Logo Mark" />
+        <BurgerMenu />
       </section>
       <section id="main__header--logo-type">
         <img src={LogoType} alt="HJ Logo Type" />
