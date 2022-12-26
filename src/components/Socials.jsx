@@ -22,7 +22,7 @@ const Socials = () => {
         className="main__footer--socials--item"
       />
       <SocialIcon
-        url="https://mailto:contact@hambergjesse.com"
+        url="/contact"
         target="_blank"
         rel="noreferrer"
         fgColor="var(--brand-main-white)"
