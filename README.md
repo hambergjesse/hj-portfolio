@@ -4,9 +4,17 @@ This site is designed to showcase my skills and experience as a full-stack devel
 
 ## Technologies Used
 
+### Tech Stack
+
 - JavaScript
 - React.js
 - SASS
+
+### Web Hosting
+
+- [Netlify](https://www.netlify.com/) (app host)
+- [NameSilo](https://www.namesilo.com/) (domain registrar)
+- [CloudFlare](https://www.cloudflare.com/) (security & analytics)
 
 ## Local Development
 
@@ -17,7 +25,7 @@ To set up the project locally, follow these steps:
 3. Add Email.js tokens to `/src/components/ContactForm.jsx`
 4. Start the development server: `npm start`
 
-The site will be available at `http://localhost:3000`.
+The site will be available at `http://localhost:3000`
 
 ## File Structure
 
@@ -39,8 +47,8 @@ The site will be available at `http://localhost:3000`.
 
 ## Live Version
 
-The site is deployed at [https://www.hambergjesse.com/](https://www.hambergjesse.com/).
+The site is deployed at [https://www.hambergjesse.com/](https://www.hambergjesse.com/)
 
 ## Contact
 
-Feel free to get in touch with me about this project or any of my other work. My email address is [hambergjesse@gmail.com](mailto:hambergjesse@gmail.com).
+Feel free to get in touch with me about this project or any of my other work. My email address is [contact@hambergjesse.com](mailto:contact@hambergjesse.com)
