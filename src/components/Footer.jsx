@@ -10,6 +10,8 @@ const Footer = () => {
     };
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <main className="main__footer--wrapper">
       <img src={LogoMark} alt="HJ Logo Mark" />
@@ -60,7 +62,7 @@ const Footer = () => {
       <section className="main__footer--socials">
         <Socials />
       </section>
-      <p>© 2022 Jesse Hamberg. All rights reserved.</p>
+      <p>© {currentYear} Jesse Hamberg. All rights reserved.</p>
     </main>
   );
 };
