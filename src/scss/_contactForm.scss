@@ -25,6 +25,8 @@
     height: 200px;
     color: var(--brand-main-white);
     padding: 10px;
+    resize: vertical;
+    max-height: 400px;
     border-radius: 15px;
     border: 1px solid var(--brand-main-bright);
     background-color: var(--brand-main-nearly-black);
