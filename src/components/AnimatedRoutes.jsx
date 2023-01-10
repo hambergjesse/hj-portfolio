@@ -1,8 +1,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import About from "../pages/About";
-import Experience from "../pages/Experience";
-import Work from "../pages/Work";
-import Contact from "../pages/Contact";
+import About from "../pages/About/About";
+import Experience from "../pages/Experience/Experience";
+import Work from "../pages/Work/Work";
+import Contact from "../pages/Contact/Contact";
 
 import { AnimatePresence, LayoutGroup } from "framer-motion";
 

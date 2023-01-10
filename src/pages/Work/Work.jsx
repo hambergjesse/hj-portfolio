@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import ExperienceItems from "../components/ExperienceItems";
+import WorkItems from "./WorkItems";
 
-const Experience = () => {
+const Work = () => {
   return (
     <motion.div
       layout
@@ -18,14 +18,13 @@ const Experience = () => {
         duration: 1,
       }}
     >
-      <main className="main__experience--wrapper">
-        <div className="main__experience--imagecontainer"></div>
-        <div className="main__experience--container">
-          <ExperienceItems />
+      <main className="main__work--wrapper">
+        <div className="main__work--container">
+          <WorkItems />
         </div>
       </main>
     </motion.div>
   );
 };
 
-export default Experience;
+export default Work;

@@ -1,8 +1,8 @@
-import LogoMark from "../assets/logomark-white.webp";
-import LogoType from "../assets/logotype-white.webp";
+import LogoMark from "../../assets/logomark-white.webp";
+import LogoType from "../../assets/logotype-white.webp";
 import { NavLink } from "react-router-dom";
-import BurgerMenu from "./BurgerMenu";
-import Button from "./Button";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import Button from "../Button";
 
 const Header = () => {
   const navLinkStyles = ({ isActive }) => {

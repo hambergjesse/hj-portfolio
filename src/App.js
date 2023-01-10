@@ -1,7 +1,7 @@
 import AnimatedRoutes from "./components/AnimatedRoutes";
-import Background from "./components/Background";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Background from "./components/Background/Background";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import "./scss/index.scss";
 
 const App = () => {

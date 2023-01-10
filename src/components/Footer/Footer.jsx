@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import LogoMark from "../assets/logomark-white.webp";
+import LogoMark from "../../assets/logomark-white.webp";
 import Socials from "./Socials";
 
 const Footer = () => {

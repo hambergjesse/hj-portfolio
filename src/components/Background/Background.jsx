@@ -1,4 +1,4 @@
-import BackgroundIMG from "../assets/background.webp";
+import BackgroundIMG from "../../assets/background.webp";
 
 const Background = () => {
   const preLoadImage = (new Image().src = BackgroundIMG);

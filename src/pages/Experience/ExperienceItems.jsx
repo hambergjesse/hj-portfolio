@@ -1,7 +1,7 @@
-import k1ckOne from "../assets/experience/work/k1ck-1.webp";
-import k1ckTwo from "../assets/experience/work/k1ck-2.webp";
-import eseOne from "../assets/experience/work/ese-1.webp";
-import eseTwo from "../assets/experience/work/ese-2.webp";
+import k1ckOne from "../../assets/experience/work/k1ck-1.webp";
+import k1ckTwo from "../../assets/experience/work/k1ck-2.webp";
+import eseOne from "../../assets/experience/work/ese-1.webp";
+import eseTwo from "../../assets/experience/work/ese-2.webp";
 
 const ExperienceItems = () => {
   const jobs = [

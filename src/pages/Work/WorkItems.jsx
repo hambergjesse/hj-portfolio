@@ -1,6 +1,6 @@
-import timeTracker from "../assets/experience/time-tracker.webp";
-import futuriceApp from "../assets/experience/futurice-app.webp";
-import randomLogic from "../assets/experience/random-logic.webp";
+import timeTracker from "../../assets/experience/time-tracker.webp";
+import futuriceApp from "../../assets/experience/futurice-app.webp";
+import randomLogic from "../../assets/experience/random-logic.webp";
 
 const WorkItems = () => {
   const preLoadImage = (url) => {
