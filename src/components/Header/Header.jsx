@@ -36,7 +36,7 @@ const Header = () => {
         </nav>
         <Button
           text="Resume"
-          link="https://drive.google.com/file/d/19ss-86Egf04LYXhlcPlmyhq4W4RfLlwz/view?usp=share_link"
+          link="https://drive.google.com/file/d/1tKTSsdklMKn-cAJlXoD0RANnonbh9GXx/view?usp=share_link"
         />
       </section>
     </main>

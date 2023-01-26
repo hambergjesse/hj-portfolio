@@ -10,7 +10,9 @@ const ExperienceItems = () => {
       position: "Full Stack Developer",
       duration: "Nov 2022 - Present",
       link: "https://virittamohelsinki.fi/",
-      description: [],
+      description: [
+        "Responsible for developing projects using React.js, SCSS, and TypeScript for various clients. I worked in an agile development environment and delivered projects on time and within budget. I supported the project life-cycle and collaborated with diverse team members to design solutions that met the unique needs of clients.",
+      ],
       images: [],
     },
     {
